@@ -5,7 +5,7 @@ import { getAuth } from 'firebase/auth'
 import {getStorage} from 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAFL7_JbKFhHsMdO9O8yv6qEl9jCDDHcXc",
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
   authDomain: "preboardresult.firebaseapp.com",
   projectId: "preboardresult",
   storageBucket: "preboardresult.appspot.com",
