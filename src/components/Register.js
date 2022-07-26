@@ -3,6 +3,8 @@ import { useNavigate, NavLink } from 'react-router-dom'
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../firebase";
 import './Register.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
@@ -37,13 +39,22 @@ const Register = () => {
 
             navigate('/uploadprofile')
         } catch (error) {
-            console.log(error.message);
+            toast.error(error.message, {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         }
     };
 
 
     return (
         <>
+            <ToastContainer />
             <div className="background">
                 <div className="shape"></div>
                 <div className="shape"></div>
