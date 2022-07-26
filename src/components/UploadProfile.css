@@ -11,8 +11,14 @@
     width: 50%;
     height: 20%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.childImg img{
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .prfbtn{

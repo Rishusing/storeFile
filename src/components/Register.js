@@ -23,9 +23,7 @@ const Register = () => {
     }
 
     const register = async (e) => {
-        console.log(name);
-        console.log(registerEmail);
-        console.log(registerPassword);
+        
         e.preventDefault();
 
         try {
