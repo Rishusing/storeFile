@@ -1,0 +1,14 @@
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.imageViewerMain *{
+    border-radius: 5px;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    max-height: calc(100vh - 110px);
+}
+
+.image-gallery-thumbnail-image{
+    height: 70px;
+}
