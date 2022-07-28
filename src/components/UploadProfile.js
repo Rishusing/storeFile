@@ -50,7 +50,7 @@ const UploadProfile = () => {
                     <img src={baseImage} height="200px" alt='Profile' />
                 </div>
                 <div>
-                    <input type="file" onChange={handleChange} />
+                    <input type="file" accept='image/*' onChange={handleChange} />
                     <button className='prfbtn' onClick={uploadImage} >Upload</button>
                 </div>
             </div>
